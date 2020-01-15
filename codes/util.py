@@ -18,14 +18,14 @@ stemmer = SnowballStemmer("english")
 def split_stem_stop(df1,stopword, tag=False):
     df = df1.copy(deep=True)
     if tag:
+        df = df.replace(np.nan, '', regex=True)
         df['all_sentences'] = df[0] +' '+df[1] +' '+df[2] +' '+df[3] +' '+df[4] +' '+df[5] +' '+df[6] +' '+df[7] +' '+df[8] +' '+df[9] +' '+df[10] +' '+df[11] +' '+df[12]
     else:
         df['all_sentences'] = df['0'] +' '+df['1'] +' '+df['2'] +' '+df['3'] +' '+df['4']
     df['list_sentence'] = df['all_sentences'].str.split(' ')
     df['list_sentence'] = df['list_sentence'].apply(lambda x: [y.lower() for y in x])
-    df['list_sentence'] = df['list_sentence'].apply(lambda x: [re.sub(r'[^\w\s]','',i) for i in x])
+    df['list_sentence'] = df['list_sentence'].apply(lambda x: [re.sub(r'[^\w\s]',' ',i) for i in x])
     df['list_sentence'] = df['list_sentence'].apply(lambda x: [lemma.lemmatize(y) for y in x if y not in stopword])
-    #print('test')
     df['list_sentence'] = df['list_sentence'].apply(lambda x: [stemmer.stem(y) for y in x])
     return df
 
