@@ -52,18 +52,18 @@ I split the dataset into 9000 training sample and 1000 test sample. Afer the tra
 Here are some of the query results 
 
 <p align="center">
+<font size="3"><b>Figure 4.</b> black cat standing on a couch thats in a cluttered room</font>
 <img src="img/cat.png" width=100% /><br>
-<font size="2"><b>Figure 4.</b> black cat standing on a couch thats in a cluttered room</font>
 </p>
 
 <p align="center">
+<font size="3"><b>Figure 5.</b> Zebras grazing in the tall grass of a light woodland</font>
 <img src="img/zebra.png" width=100% /><br>
-<font size="2"><b>Figure 5.</b> Zebras grazing in the tall grass of a light woodland</font>
 </p>
 
 <p align="center">
+<font size="3"><b>Figure 6.</b> A group of guys playing a video game together</font>
 <img src="img/game.png" width=100% /><br>
-<font size="2"><b>Figure 6.</b> A group of guys playing a video game together</font>
 </p>
 
 ---
