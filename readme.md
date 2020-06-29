@@ -37,7 +37,7 @@ So I decided to not use BERT but instead do word embedding myself. Then map the 
 
 <p align="center">
 <img src="img/word_embedding.jpg" width=100% /><br>
-<font size="2"><b>Figure 3.</b> word embedding. Word tokens are embedded and pass through hidden layer before mapping to the layers shared with the images. The backward arrows represent the backward gradient propagation. </font>
+<font size="2"><b>Figure 3.</b> word embedding. Word tokens are embedded and passed through hidden layer before being mapped to the layers shared with the images. The backward arrows represent the backward gradient propagation. </font>
 </p>
 
 
