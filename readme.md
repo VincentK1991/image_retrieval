@@ -43,9 +43,27 @@ So I decided to not use BERT but instead do word embedding myself. Then map the 
 
 ## Training and Result
 
-I split the dataset into 9000 training sample and 1000 test sample. Afer the training, I can retrieve about 50% of images within first top 20 result query (i.e. nearest neighbors with k = 20). This is comparable to the machine learning approach I did in Jan-2020, but this deep learning approach may scale up better if we can get more data.
+I split the dataset into 9000 training sample and 1000 test sample. Afer the training for 15 epochs, I can retrieve about 65% of images within first top 20 result query (i.e. nearest neighbors with k = 20). This is comparable to the machine learning approach I did in Jan-2020, but this deep learning approach may scale up better if we can get more data.
 
+---
 
 ## Visualization
 
 Here are some of the query results 
+
+<p align="center">
+<img src="img/cat.png" width=100% /><br>
+<font size="2"><b>Figure 4.</b> black cat standing on a couch thats in a cluttered room</font>
+</p>
+
+<p align="center">
+<img src="img/zebra.png" width=100% /><br>
+<font size="2"><b>Figure 5.</b> Zebras grazing in the tall grass of a light woodland</font>
+</p>
+
+<p align="center">
+<img src="img/game.png" width=100% /><br>
+<font size="2"><b>Figure 6.</b> A group of guys playing a video game together</font>
+</p>
+
+---
